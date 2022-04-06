@@ -1,12 +1,12 @@
-const pass = String.fromCodePoint(0x1f952);
-const fail = String.fromCodePoint(0x1f336);
+// const pass = String.fromCodePoint(0x1f952);
+// const fail = String.fromCodePoint(0x1f336);
 
 const assertArraysEqual = function (array1, array2) {
   const isEqual = eqArrays(array1, array2);
   if (isEqual === true) {
-    console.log(`${pass} Assertion Passed: first array === second array`);
+    console.log(`🥒 Assertion Passed: first array === second array`);
   } else {
-    console.log(`${fail} Assertion Failed: first array !== second array`);
+    console.log(`🌶 Assertion Failed: first array !== second array`);
   }
 };
 
@@ -19,4 +19,4 @@ const eqArrays = function (array1, array2) {
   );
 };
 
-assertArraysEqual([1, 2, 3, 4], [1, 2, "3"]); // => should PASS
+assertArraysEqual([1, 2, "3"]); // => should PASS
