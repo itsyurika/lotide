@@ -3,9 +3,9 @@ const fail = String.fromCodePoint(0x1f336);
 
 const assertEqual = function (actual, expected) {
   if (actual === expected) {
-    console.log(`${pass} Assertion Passed: ${actual} === ${expected}`);
+    return console.log(`🥒 Assertion Passed: ${actual} === ${expected}`);
   }
-  console.log(`${fail} Assertion Failed: ${actual} !== ${expected}`);
+  return console.log(`🌶 Assertion Failed: ${actual} !== ${expected}`);
 };
 
 const eqArrays = function (array1, array2) {
