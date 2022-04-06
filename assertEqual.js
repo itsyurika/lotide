@@ -1,11 +1,11 @@
-const pass = String.fromCodePoint(0x1f952);
-const fail = String.fromCodePoint(0x1f336);
+// const pass = String.fromCodePoint(0x1f952);
+// const fail = String.fromCodePoint(0x1f336);
 
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   if (actual === expected) {
-    console.log(`${pass} Assertion Passed: ${actual} === ${expected}`);
+    console.log(`🥒 Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`${fail} Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🌶 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
