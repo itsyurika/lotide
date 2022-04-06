@@ -1,8 +1,17 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    return console.log(`🥒 Assertion Passed: ${actual} === ${expected}`);
+const eqArrays = function (array1, array2) {
+  return (
+    array1.length === array2.length &&
+    array1.every((element, index) => {
+      return element === array2[index];
+    })
+  );
+};
+
+const assertArraysEqual = function (array1, array2) {
+  if (eqArrays(array1, array2)) {
+    return console.log(`🥒 Assertion Passed: first array === second array`);
   }
-  return console.log(`🌶 Assertion Failed: ${actual} !== ${expected}`);
+  return console.log(`🌶 Assertion Failed: first array !== second array`);
 };
 
 // const countLetters = function (str) {

@@ -1,4 +1,4 @@
-const eqArrays = function(array1, array2) {
+const eqArrays = function (array1, array2) {
   return (
     array1.length === array2.length &&
     array1.every((element, index) => {
@@ -7,9 +7,8 @@ const eqArrays = function(array1, array2) {
   );
 };
 
-const assertArraysEqual = function(array1, array2) {
-  const isEqual = eqArrays(array1, array2);
-  if (isEqual) {
+const assertArraysEqual = function (array1, array2) {
+  if (eqArrays(array1, array2)) {
     return console.log(`🥒 Assertion Passed: first array === second array`);
   }
   return console.log(`🌶 Assertion Failed: first array !== second array`);
@@ -46,7 +45,7 @@ const assertArraysEqual = function(array1, array2) {
 //   return results;
 // };
 
-const letterPositions = function(sentence) {
+const letterPositions = function (sentence) {
   const results = {};
   let noSpaceStr = sentence.split(" ").join("");
   for (const letter of noSpaceStr) {
