@@ -1,5 +1,13 @@
-// const pass = String.fromCodePoint(0x1f952);
-// const fail = String.fromCodePoint(0x1f336);
+const words = ["hello", "my", "name", "is", "yuri"];
+
+const map = function(array, callback) {
+  const results = [];
+  for (const item of array) {
+    results.push(callback(item));
+  }
+  return results;
+};
+
 const eqArrays = function (array1, array2) {
   return (
     array1.length === array2.length &&
@@ -16,4 +24,7 @@ const assertArraysEqual = function (array1, array2) {
   }
   return console.log(`🌶 Assertion Failed: first array !== second array`);
 };
-assertArraysEqual([1, 2, 3], [1, 2, "3"]); // => should FAIL
+
+const results1 = map(words, word => word[0]);
+const expected = ["h", "m", "n", "i", "y"];
+assertArraysEqual(results1, expected);
