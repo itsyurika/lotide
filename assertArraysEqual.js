@@ -1,5 +1,4 @@
-// const pass = String.fromCodePoint(0x1f952);
-// const fail = String.fromCodePoint(0x1f336);
+
 const eqArrays = function (array1, array2) {
   return (
     array1.length === array2.length &&
