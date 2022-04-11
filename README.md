@@ -41,5 +41,5 @@ The following functions are currently implemented:
 - `map`: Iterates over given array and applies given callback function
 - `middle`: Retrieves middle element of an array, two elements if even number of elements
 - `tail`: Retrieves every element except the head of the array
-- `takeUntil`: Collects itesm from a provided array until the callback provided returns a truthy value
+- `takeUntil`: Collects items from a provided array until the callback provided returns a truthy value
 - `without`: Returns an array after removing unwanted elements
