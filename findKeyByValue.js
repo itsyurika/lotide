@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return console.log(`🥒 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -6,7 +6,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const findKeyByValue = function (object, value) {
+const findKeyByValue = function(object, value) {
   for (const iterator in object) {
     if (object[iterator] === value) return iterator;
   }
@@ -20,5 +20,7 @@ const bestTVShowsByGenre = {
 
 // console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+
+module.exports = findKeyByValue;

@@ -1,4 +1,4 @@
-const assertArraysEqual = function (array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   if (array2) {
     // function wouldn't run unless there are 2 arrays
     const isEqual = eqArrays(array1, array2);
@@ -10,7 +10,7 @@ const assertArraysEqual = function (array1, array2) {
   }
 };
 
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   return (
     array1.length === array2.length &&
     array1.every((element, index) => {
@@ -26,4 +26,6 @@ const flatten = (array) => {
   return newArray;
 };
 
-console.log(flatten([1, 2, [3, [4, 5]], 5, [6], [7, 8]])); // => [1, 2, 3, 4, 5, 6]
+// console.log(flatten([1, 2, [3, [4, 5]], 5, [6], [7, 8]])); // => [1, 2, 3, 4, 5, 6]
+
+module.exports = flatten;

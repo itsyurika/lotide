@@ -1,11 +1,11 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return console.log(`🥒 Assertion Passed: ${actual} === ${expected}`);
   }
   return console.log(`🌶 Assertion Failed: ${actual} !== ${expected}`);
 };
 
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   return (
     array1.length === array2.length &&
     array1.every((element, index) => {
@@ -14,7 +14,7 @@ const eqArrays = function (array1, array2) {
   );
 };
 
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   let key1 = Object.keys(object1);
   let key2 = Object.keys(object2);
   if (key1.length !== key2.length) return false;
@@ -42,5 +42,7 @@ console.log(eqObjects(cd, dc)); // => true
 const cd2 = { c: "1", d: ["2", 3, 4] };
 console.log(eqObjects(cd, cd2)); // => false
 
-assertEqual(eqObjects(cd, dc), true);
-assertEqual(eqObjects(cd, cd2), false);
+// assertEqual(eqObjects(cd, dc), true);
+// assertEqual(eqObjects(cd, cd2), false);
+
+module.exports = eqObjects;

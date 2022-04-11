@@ -45,6 +45,7 @@ const assertArraysEqual = function (array1, array2) {
 //   return results;
 // };
 
+//*? can I use let str = string.replace(/[^\w\s]|_/g, ""); to remove space?
 const letterPositions = function (sentence) {
   const results = {};
   let noSpaceStr = sentence.split(" ").join("");
