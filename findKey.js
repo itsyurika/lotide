@@ -13,8 +13,6 @@ const findKey = (obj, callback) => {
   }
 };
 
-
-
 const starSets = {
   "Blue Hill": { stars: 1 },
   "Akaleri": { stars: 3 },

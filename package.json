@@ -1,6 +1,6 @@
 {
   "name": "@itsyurika/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of useful functions created for LHL lotide project",
   "main": "index.js",
   "directories": {
