@@ -25,8 +25,8 @@ const assertArraysEqual = function(array1, array2) {
   return console.log(`🌶 Assertion Failed: first array !== second array`);
 };
 
-const results1 = map(words, word => word[0]);
-const expected = ["h", "m", "n", "i", "y"];
+// const results1 = map(words, word => word[0]);
+// const expected = ["h", "m", "n", "i", "y"];
 // assertArraysEqual(results1, expected);
 
 module.exports = map;

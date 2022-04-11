@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@itsyurika/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A collection of useful functions created for LHL lotide project",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/itsyurika/lotide.git"
   },
-  "author": "",
+  "author": "itsyurika",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/itsyurika/lotide/issues"
