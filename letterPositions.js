@@ -1,4 +1,4 @@
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   return (
     array1.length === array2.length &&
     array1.every((element, index) => {
@@ -7,7 +7,7 @@ const eqArrays = function (array1, array2) {
   );
 };
 
-const assertArraysEqual = function (array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     return console.log(`🥒 Assertion Passed: first array === second array`);
   }
@@ -46,7 +46,7 @@ const assertArraysEqual = function (array1, array2) {
 // };
 
 //*? can I use let str = string.replace(/[^\w\s]|_/g, ""); to remove space?
-const letterPositions = function (sentence) {
+const letterPositions = function(sentence) {
   const results = {};
   let noSpaceStr = sentence.split(" ").join("");
   for (const letter of noSpaceStr) {
@@ -58,11 +58,11 @@ const letterPositions = function (sentence) {
   return results;
 };
 
-console.log(letterPositions("hello"));
+// console.log(letterPositions("hello"));
 // assertArraysEqual(letterPositions("hello"), {
 //   h: [0],
 //   e: [1],
 //   l: [2, 3],
 //   o: [4],
 // });
-assertArraysEqual(letterPositions("hello").e, [1]);
+// assertArraysEqual(letterPositions("hello").e, [1]);

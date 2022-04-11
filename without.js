@@ -21,7 +21,7 @@ const eqArrays = function(array1, array2) {
 
 const without = function(array1, array2) {
   const newArray = array1.filter((element) => !array2.includes(element));
-  console.log(newArray);
+  // console.log(newArray);
   return newArray;
 };
 
