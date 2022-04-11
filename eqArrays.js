@@ -1,14 +1,4 @@
-const pass = String.fromCodePoint(0x1f952);
-const fail = String.fromCodePoint(0x1f336);
-
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    return console.log(`🥒 Assertion Passed: ${actual} === ${expected}`);
-  }
-  return console.log(`🌶 Assertion Failed: ${actual} !== ${expected}`);
-};
-
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   return (
     array1.length === array2.length &&
     array1.every((element, index) => {
@@ -24,4 +14,5 @@ const eqArrays = function (array1, array2) {
 //   })
 // );
 
-assertEqual(eqArrays(["1", "2"], ["1", "2", "3"]), true); // =>
+
+module.exports = eqArrays;
